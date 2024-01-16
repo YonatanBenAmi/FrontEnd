@@ -1,0 +1,171 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+
+@layer utilities {
+    .bg-color-body {
+        background: #040413;
+    }
+    .color-btn-border-px {
+        border: solid 1px #040413;
+    }
+
+    .color-yellow {
+        color: #F6C927;
+    }
+      
+    .b-yellow {
+        border: 1px solid #F6C927;
+    }
+    .bg-yellow {
+        background-color: #F6C927;
+    }
+
+    .app-container {
+        display: grid;
+        grid-template-rows: auto 1fr;
+        min-height: 100vh;
+    }
+}
+
+*
+{
+    @apply
+    p-0
+    m-0
+}
+
+::-webkit-scrollbar {
+    display: none; /* הסתרת הסרגל בדפדפני WebKit (כולל Chrome ו־Safari) */
+}
+
+body
+{
+    @apply
+    bg-color-body
+}
+
+header
+{
+    
+    @apply
+    h-max
+    text-neutral-50
+    bg-color-body
+    flex
+    justify-end
+    items-center
+    space-x-16
+}
+
+footer
+{
+    @apply
+    text-neutral-50
+    bg-color-body
+    flex
+    justify-end
+    items-center
+    space-x-16
+    
+}
+
+.btn
+{
+    @apply 
+    bg-color-body 
+    lg:px-9 
+    px-3
+    pb-1
+    w-12
+    lg:w-36
+    rounded-md 
+    capitalize  
+    color-btn-border-px
+    ease-in 
+    duration-200;
+}
+
+.btn:hover
+{
+    @apply 
+    bg-yellow 
+}
+
+/*  */
+
+body {
+    line-height: 1;
+    background: #0a0a1b;
+    color: #000000;
+  }
+  
+  .dictionary {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin: 4rem auto;
+    max-width: 90%;  
+  }
+  
+  .dictionary > .term {
+    text-align: center;
+    max-width: 20rem;
+    margin-bottom: 3rem;
+    padding: 2rem;
+    border-radius: 10px;
+    background-color: #f6c927;
+    border: white 1px solid; 
+    position: relative;
+  }
+  
+  
+  .dictionary > .term > dt {
+    margin-bottom: 1rem;
+  }
+  .dictionary > .term > dd {
+    margin-bottom: 2rem;
+  }
+  
+  dt {
+    color: white;
+    font-family: Poppins;
+  }
+  
+  dt span {
+    font-size: 200%;
+    font-weight: 900;
+  }
+  
+  .titel {
+    background-color: #0e0e28;
+    margin: 0 auto 20px;
+    display: block;
+    border-radius: 10px;
+  }
+  
+  dd {
+    font-size: 95.5%;
+    font-weight: bold;
+    font-family: Poppins; 
+  }
+
+  .B-button {
+    display: block;
+    background-color: #0e0e28;
+    color: white;
+    padding: 12px 24px; 
+    font-size: 18px;
+    font-weight: bold;
+    cursor: pointer;
+    border-radius: 10px;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: 0;
+  }
+  
+
+  
