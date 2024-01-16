@@ -11,6 +11,7 @@
   },
   "dependencies": {
     "@datocms/cma-client-browser": "^3.0.9",
+    "@vercel/speed-insights": "^1.0.3",
     "aos": "3.0.0-beta.6",
     "autoprefixer": "^10.4.16",
     "datocms-client": "^3.5.21",

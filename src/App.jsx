@@ -10,6 +10,7 @@ import Careers from "./pages/Careers";
 import ScrollTop from "./components/ScrollTop";
 import Payments from "./pages/Payments";
 import './App.css';
+import { SpeedInsights } from "@vercel/speed-insights/next"
 
 export default function App() {
   return (
